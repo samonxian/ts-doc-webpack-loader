@@ -1,0 +1,17 @@
+.cache
+.idea/
+.vscode/
+node_modules/
+coverage/
+lib/
+.DS_Store
+*.tar.gz
+*.tar
+*.zip
+*.tgz
+*.swp
+*.swo
+lerna-debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
