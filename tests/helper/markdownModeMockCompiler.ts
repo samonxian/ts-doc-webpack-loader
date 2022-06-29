@@ -1,7 +1,7 @@
 import path from 'path';
 import fs from 'fs';
 import webpack from 'webpack';
-import markdownLoader, { Option } from '../../src/markdownLoader';
+import markdownLoader, {  Option } from '../../src/markdownLoader';
 
 export default (entry: string, options?: Option) => {
   const source = fs.readFileSync(entry, { encoding: 'utf-8' });
@@ -9,7 +9,7 @@ export default (entry: string, options?: Option) => {
   return markdownLoader.bind(({
     query: {
       alias: {
-        '@tencent/shared-components': path.resolve(__dirname, '../fixture'),
+        'shared-components': path.resolve(__dirname, '../fixture'),
       },
       ...options,
     },

@@ -1,12 +1,12 @@
 {
   "name": "ts-doc-webpack-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "tsdoc webpack loader",
   "main": "./lib/index.js",
   "scripts": {
     "build:publish": "npm run build && npm publish",
     "build": "tsc --project tsconfig.production.json",
-    "test": "shared-jest-tester --verbose"
+    "test": "jest --verbose"
   },
   "files": [
     "lib"
@@ -15,8 +15,6 @@
   "author": "",
   "devDependencies": {
     "@babel/parser": "7.11.5",
-    "@commitlint/cli": "^9.1.2",
-    "@commitlint/config-conventional": "^9.1.2",
     "@typescript-eslint/eslint-plugin": "^4.0.1",
     "@typescript-eslint/parser": "^4.0.1",
     "@types/webpack": "^4.41.22",
@@ -24,31 +22,21 @@
     "@types/loader-utils": "^2.0.1",
     "@types/resolve": "^1.17.1",
     "@types/schema-utils": "^2.4.0",
-    "@tencent/eslint-config-react-app": "^0.17.0",
-    "@tencent/shared-jest-tester": "^1.0.0",
     "babel-loader": "^8.1.0",
-    "commitizen": "^4.2.1",
-    "husky": "^4.2.5",
     "prettier": "^2.1.1",
-    "lint-staged": "^10.3.0",
     "typescript": "~3.9.7",
+    "jest": "^24.9.0",
     "ts-jest": "24.2.0",
     "deepmerge": "4.2.2",
     "memfs": "3.2.0"
   },
   "dependencies": {
     "webpack": "4.44.1",
-    "@microsoft/tsdoc": "0.12.21",
     "resolve": "^1.17.0",
     "loader-utils": "^2.0.0",
     "schema-utils": "^2.7.1"
   },
   "engines": {
     "node": ">= 10.17.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }

@@ -32,7 +32,7 @@
 ## 安装
 
 ```
-npm i @tencent/ts-doc-loader
+npm i ts-doc-webpack-loader
 ```
 
 ## 使用
@@ -64,7 +64,7 @@ markdown 模式的 loader 会把符合规则的文本替换为一段 markdown �
 文本规则例子
 
 ```jsx
-<TsDoc src="@tencent/shared-components/src/openConfirmModal/index.tsx">
+<TsDoc src="shared-components/src/openConfirmModal/index.tsx">
   <Playground
     fileList={[
       {
@@ -92,7 +92,7 @@ const config = {
           'babel-loader',
           '@mdx-js/loader',
           {
-            loader: require.resolve('@tencent/ts-doc-loader'),
+            loader: require.resolve('ts-doc-webpack-loader'),
             options: {},
           },
         ],
@@ -116,11 +116,11 @@ const config = {
           'babel-loader',
           '@mdx-js/loader',
           {
-            loader: require.resolve('@tencent/ts-doc-loader'),
+            loader: require.resolve('ts-doc-webpack-loader'),
             options: {
               alias: {
-                '@tencent/shared-components': path.resolve(__dirname, '../shared-components'),
-                '@tencent/shared-utils': path.resolve(__dirname, '../shared-utils'),
+                'shared-components': path.resolve(__dirname, '../shared-components'),
+                'shared-utils': path.resolve(__dirname, '../shared-utils'),
               },
             },
           },

@@ -1,6 +1,8 @@
-const path = require('path');
-
 module.exports = {
-  preset: path.resolve(__dirname, './tests/presets/typescript'),
   testEnvironment: 'node',
+  testMatch: ['**/tests/unit/**/*.spec.[jt]s?(x)', '**/__tests__/*.[jt]s?(x)'],
+  moduleFileExtensions: ['js', 'ts'],
+  transform: {
+    '^.+\\.ts$': require.resolve('ts-jest'),
+  },
 };
