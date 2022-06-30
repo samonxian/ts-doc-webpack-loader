@@ -1,6 +1,6 @@
 {
   "name": "ts-doc-webpack-loader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "tsdoc webpack loader",
   "main": "./lib/index.js",
   "scripts": {
