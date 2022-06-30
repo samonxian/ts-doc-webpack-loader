@@ -33,6 +33,7 @@
   "dependencies": {
     "webpack": "4.44.1",
     "resolve": "^1.17.0",
+    "@microsoft/tsdoc": "0.14.1",
     "loader-utils": "^2.0.0",
     "schema-utils": "^2.7.1"
   },
